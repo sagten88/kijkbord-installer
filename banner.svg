@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="Kijkbord: een bord voor thuis" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <style>
+    .glow{animation:glow 6s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.45}50%{opacity:.9}}
+    .icon{animation:pop 4s ease-in-out infinite;transform-origin:152px 180px}
+    @keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+    .chip rect{fill:#181b21;stroke:#2c313b}
+    .chip text{fill:#c9ced6}
+    .c1 rect,.c2 rect,.c3 rect,.c4 rect,.c5 rect{animation:chip 10s infinite}
+    .c1 text,.c2 text,.c3 text,.c4 text,.c5 text{animation:chipt 10s infinite}
+    .c2 rect,.c2 text{animation-delay:2s}.c3 rect,.c3 text{animation-delay:4s}
+    .c4 rect,.c4 text{animation-delay:6s}.c5 rect,.c5 text{animation-delay:8s}
+    @keyframes chip{0%,22%,100%{fill:#181b21;stroke:#2c313b}4%,16%{fill:#12302d;stroke:#14b8a6}}
+    @keyframes chipt{0%,22%,100%{fill:#c9ced6}4%,16%{fill:#5eead4}}
+    .colon{animation:blink 2s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .alert{animation:alert 3s ease-in-out infinite}
+    @keyframes alert{50%{opacity:.55}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <defs>
+    <radialGradient id="halo" cx="0.12" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="#101216"/>
+  <rect class="glow" width="1280" height="360" rx="24" fill="url(#halo)"/>
+
+  <!-- logo -->
+  <g class="icon">
+    <rect x="72" y="100" width="160" height="160" rx="36" fill="#14b8a6"/>
+    <rect x="102" y="132" width="100" height="72" rx="10" fill="#101216"/>
+    <rect x="114" y="144" width="32" height="20" rx="4" fill="#fbbf24"/>
+    <rect x="154" y="144" width="36" height="7" rx="3.5" fill="#e5e7eb"/>
+    <rect x="154" y="157" width="24" height="7" rx="3.5" fill="#94a3b8"/>
+    <rect x="114" y="176" width="76" height="7" rx="3.5" fill="#38bdf8"/>
+    <rect x="144" y="204" width="16" height="16" fill="#101216"/>
+    <rect x="126" y="220" width="52" height="10" rx="5" fill="#101216"/>
+  </g>
+
+  <text x="272" y="182" font-size="88" font-weight="800" fill="#f1f2f4">Kijkbord</text>
+  <text x="276" y="228" font-size="28" fill="#9aa1ad">Een bord voor thuis, op je tv of tablet</text>
+
+  <g font-size="18">
+    <g class="chip c1"><rect x="276" y="258" width="78" height="36" rx="18"/><text x="315" y="282" text-anchor="middle">Weer</text></g>
+    <g class="chip c2"><rect x="364" y="258" width="82" height="36" rx="18"/><text x="405" y="282" text-anchor="middle">Regen</text></g>
+    <g class="chip c3"><rect x="456" y="258" width="92" height="36" rx="18"/><text x="502" y="282" text-anchor="middle">Agenda</text></g>
+    <g class="chip c4"><rect x="558" y="258" width="74" height="36" rx="18"/><text x="595" y="282" text-anchor="middle">Afval</text></g>
+    <g class="chip c5"><rect x="642" y="258" width="142" height="36" rx="18"/><text x="713" y="282" text-anchor="middle">Verjaardagen</text></g>
+  </g>
+
+  <!-- het bord op een tv -->
+  <g transform="translate(860 52)">
+    <rect width="360" height="226" rx="14" fill="#0b1220" stroke="#2c313b" stroke-width="2"/>
+    <text x="18" y="34" font-size="15" font-weight="700" fill="#e5e7eb">Goedemorgen</text>
+    <text x="18" y="52" font-size="11" fill="#94a3b8">Woensdag 25 november</text>
+    <text x="342" y="48" font-size="34" font-weight="800" fill="#f1f2f4" text-anchor="end">07<tspan class="colon">:</tspan>45</text>
+
+    <rect x="14" y="66" width="104" height="146" rx="10" fill="#121b2e" stroke="#24314d"/>
+    <circle cx="44" cy="100" r="13" fill="#fbbf24"/>
+    <text x="64" y="108" font-size="26" font-weight="800" fill="#f1f2f4">3°</text>
+    <text x="24" y="134" font-size="11" fill="#94a3b8">Zonnig</text>
+    <g fill="#38bdf8"><rect x="24" y="186" width="6" height="6" rx="1"/><rect x="33" y="180" width="6" height="12" rx="1"/><rect x="42" y="172" width="6" height="20" rx="1"/><rect x="51" y="178" width="6" height="14" rx="1"/><rect x="60" y="186" width="6" height="6" rx="1"/></g>
+    <g fill="#24314d"><rect x="69" y="189" width="6" height="3"/><rect x="78" y="189" width="6" height="3"/><rect x="87" y="189" width="6" height="3"/><rect x="96" y="189" width="6" height="3"/></g>
+
+    <rect x="128" y="66" width="104" height="146" rx="10" fill="#121b2e" stroke="#24314d"/>
+    <text x="140" y="88" font-size="10" font-weight="700" fill="#94a3b8">AGENDA</text>
+    <g font-size="11" fill="#e5e7eb">
+      <circle cx="144" cy="106" r="3.5" fill="#38bdf8"/><text x="152" y="110">Tandarts</text>
+      <circle cx="144" cy="126" r="3.5" fill="#f472b6"/><text x="152" y="130">Zwemles</text>
+      <circle cx="144" cy="146" r="3.5" fill="#fbbf24"/><text x="152" y="150">Sinterklaas</text>
+    </g>
+
+    <rect x="242" y="66" width="104" height="146" rx="10" fill="#121b2e" stroke="#24314d"/>
+    <text x="254" y="88" font-size="10" font-weight="700" fill="#94a3b8">AFVAL</text>
+    <g class="alert"><rect x="252" y="96" width="84" height="38" rx="8" fill="#3a3220" stroke="#fbbf24"/></g>
+    <rect x="260" y="104" width="14" height="20" rx="2" fill="#16a34a"/>
+    <text x="280" y="114" font-size="10" font-weight="700" fill="#f1f2f4">Morgen</text>
+    <text x="280" y="127" font-size="10" fill="#c9ced6">GFT</text>
+    <rect x="260" y="146" width="12" height="16" rx="2" fill="#f97316"/><text x="280" y="158" font-size="10" fill="#c9ced6">PMD · za</text>
+    <rect x="260" y="172" width="12" height="16" rx="2" fill="#2563eb"/><text x="280" y="184" font-size="10" fill="#c9ced6">Papier · 3 dec</text>
+  </g>
+  <rect x="1020" y="278" width="40" height="14" fill="#2c313b"/>
+  <rect x="990" y="292" width="100" height="8" rx="4" fill="#2c313b"/>
+</svg>
